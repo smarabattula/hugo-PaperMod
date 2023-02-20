@@ -42,6 +42,9 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
+             <!--ADDED IMAGE LOGO-->
+            <img src="{{ "img/mufc.png" | absURL }}" alt="test">
+          <!-- REMOVE THIS TAG TO RESTORE THEME>
             {{- $label_text := (site.Params.label.text | default site.Title) }}
             {{- if site.Title }}
             <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
@@ -72,6 +75,7 @@
                 {{- $label_text -}}
             </a>
             {{- end }}
+        < REMOVE THIS TAG TO RESTORE THEME-->
             <div class="logo-switches">
                 {{- if (not site.Params.disableThemeToggle) }}
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
